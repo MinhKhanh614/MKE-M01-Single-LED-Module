@@ -98,7 +98,7 @@ Mạch led đơn MKE-M01 10mm single LED module thuộc **hệ sinh thái phần
 - Trong **Tools / Library Manager**, tìm và cài đặt bộ thư viện tổng hợp **"MAKERLABVN" by MakerLab.vn**
 - Mở chương trình mẫu **"MKE_M01_Single_LED_LCD_Serial"** tại **File / Examples / MAKERLABVN / Module / MKE_M01_Single_LED_LCD_Serial** hoặc [tải chương trình mẫu tại đây](/arduino)
 - Chọn board là **Arduino Uno** (mạch Vietduino Uno tương thích với Arduino Uno), chọn đúng cổng **COM Port** của mạch và tiến hành nạp chương trình.
-- Kết nối mạch Vietduino Uno với MakerEdu Shield, kết nối Mạch led đơn MKE-M01 10mm single LED module.
+- Kết nối mạch **Vietduino Uno** với **MakerEdu Shield**, kết nối **Mạch led đơn MKE-M01** 10mm single LED module.
 
 ### Hướng dẫn lập trình với mBlock (kéo thả khối)
 
@@ -109,7 +109,7 @@ Mạch led đơn MKE-M01 10mm single LED module thuộc **hệ sinh thái phần
 - Thêm Extension "Upload Mode Broadcast" by mBlock Official
 - Thêm Extension "MakerEdu Hardware" by MakerEduVN
 - Mở [chương trình mẫu tại đây](/mBlock5), kết nối MakerEdu Creator với máy tính và nạp chương trình.
-- Kết nối cảm biến với cổng [D3,D2] và màn hình LCD vào cổng [I2C] trên MakerEdu Creator, cấp nguồn qua cổng USB của MakerEdu Creator để thấy chương trình hoạt động.
+- Kết nối Module LED vào cổng [D10] và màn hình LCD vào cổng [I2C] trên MakerEdu Creator, cấp nguồn qua cổng USB của MakerEdu Creator để thấy chương trình hoạt động.
 
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 
