@@ -105,11 +105,11 @@ Mạch led đơn MKE-M01 10mm single LED module thuộc **hệ sinh thái phần
 [Hướng dẫn cài đặt phần mềm, nạp chương trình, cài đặt Extension mBlock cơ bản.](https://github.com/makerlabvn/mBlock-MakerEdu-Creator)
 
 - Tải và cài đặt phần mềm mBlock 5 ([Windows](https://www.mediafire.com/file/ma55iajd7glwmbo/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Windows.zip/file) / [Mac Intel](https://www.mediafire.com/file/pjfngy6d7ktb55f/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Mac_Intel.zip/file) / [Mac M1M2](https://www.mediafire.com/file/mfdkgpgnpa7uv2s/%255BMakerLab.vn%255D_mBlock_V5.4.3_for_Mac_M1M2.zip/file))
-- Thêm Device "MakerEdu Creator" by MakerEduVN
-- Thêm Extension "Upload Mode Broadcast" by mBlock Official
-- Thêm Extension "MakerEdu Hardware" by MakerEduVN
+- Thêm Device **"MakerEdu Creator"** by MakerEduVN
+- Thêm Extension **"Upload Mode Broadcast"** by mBlock Official
+- Thêm Extension **"MakerEdu Hardware"** by MakerEduVN
 - Mở [chương trình mẫu tại đây](/mBlock5), kết nối MakerEdu Creator với máy tính và nạp chương trình.
-- Kết nối Module LED vào cổng [D10] và màn hình LCD vào cổng [I2C] trên MakerEdu Creator, cấp nguồn qua cổng USB của MakerEdu Creator để thấy chương trình hoạt động.
+- Kết nối **Module LED** vào cổng **[D10]** và **màn hình LCD** vào cổng **[I2C]** trên MakerEdu Creator, **cấp nguồn qua cổng USB** của MakerEdu Creator để thấy chương trình hoạt động.
 
 ### Hướng dẫn lập trình với Micro:bit (kéo thả khối)
 
