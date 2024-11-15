@@ -72,8 +72,9 @@ Mạch MakerEdu Shield for Vietduino sẽ tương thích tốt nhất khi sử d
 </tbody></table>
 
 ## Hình ảnh sản phẩm
+![](Vuno_shield3.jpg)
 
-## Kích thước Mản phẩm
+## Kích thước sản phẩm
 
 ## Các chân tín hiệu
 
