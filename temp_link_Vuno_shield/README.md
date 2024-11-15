@@ -13,11 +13,11 @@ Mạch MakerEdu Shield for Vietduino tương thích với các mạch điều kh
 - Mạch Vietduino Wifi BLE ESP32 (Arduino Compatible)
 
 > **Lưu ý:**
-Mạch MakerEdu Shield for Vietduino sẽ tương thích tốt nhất khi sử dụng với các mạch Vietduino giúp phát huy tối đa các chức năng của mạch
+Mạch MakerEdu Shield for Vietduino sẽ tương thích tốt nhất khi sử dụng với các mạch Vietduino giúp phát huy tối đa các chức năng của mạch.
 
 ![](Vuno_shield1.jpg)
 
-    Dự án "Mô phỏng hệ thống giám sát môi trường trong nông nghiệp thông minh" với module hiển thị LCD, cảm biến nhiệt độ độ ẩm, cảm biến ánh sáng, module còi báo động kết nối với Vietduino Uno qua MakerEdu Shield.
+> Dự án "Mô phỏng hệ thống giám sát môi trường trong nông nghiệp thông minh" với module hiển thị LCD, cảm biến nhiệt độ độ ẩm, cảm biến ánh sáng, module còi báo động kết nối với Vietduino Uno qua MakerEdu Shield.
 
 ## Thông số kỹ thuật
 
