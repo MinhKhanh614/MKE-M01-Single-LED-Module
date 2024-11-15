@@ -22,7 +22,9 @@ Mạch MakerEdu Shield for Vietduino sẽ tương thích tốt nhất khi sử d
 ![](Vuno_shield2.jpg)
 
 > Một dự án tương tự với cảm biến nhiệt độ độ ẩm và màn hình LCD nối bằng dây cắm đơn qua Breadboard.
+>
 ## Thông số kỹ thuật
+
 <table><thead>
   <tr>
     <th>Model</th>
@@ -72,17 +74,97 @@ Mạch MakerEdu Shield for Vietduino sẽ tương thích tốt nhất khi sử d
 </tbody></table>
 
 ## Hình ảnh sản phẩm
+
 ![](Vuno_shield3.jpg)
 
 ## Kích thước sản phẩm
 
-## Các chân tín hiệu
+![](Vuno_shield4.jpg)
+
+## Các chân cắm
+
+<table><thead>
+  <tr>
+    <th>Tên</th>
+    <th>SL</th>
+    <th>Type</th>
+    <th>Ghi chú</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Digital I/O (3 pin)</td>
+    <td>3</td>
+    <td>PORT 3 pin XH2.54</td>
+    <td>D9, D10, D11 (có PWM)</td>
+  </tr>
+  <tr>
+    <td>Digital I/O (4 pin)</td>
+    <td>1</td>
+    <td>PORT 4 pin XH2.54</td>
+    <td>D12, D13</td>
+  </tr>
+  <tr>
+    <td>Analog Input</td>
+    <td>3</td>
+    <td>PORT 3 pin XH2.54</td>
+    <td>A1, A2, A3</td>
+  </tr>
+  <tr>
+    <td>I2C COM</td>
+    <td>5</td>
+    <td>PORT 4 pin XH2.54</td>
+    <td>A4, A5</td>
+  </tr>
+  <tr>
+    <td>UART COM</td>
+    <td>1</td>
+    <td>PORT 4 pin XH2.54</td>
+    <td>D0, D1</td>
+  </tr>
+  <tr>
+    <td>POWER+</td>
+    <td>1</td>
+    <td>PORT 4 pin XH2.54</td>
+    <td>Vin, 5V, 3V3, GND</td>
+  </tr>
+</tbody>
+</table>
 
 ## Hướng dẫn sử dụng
 
-### Các thiết bị sử dụng trong bài hướng dẫn
+### Các chức năng chính trên mạch
 
-#### Arduino
+![](Vuno_shield5.jpg)
+
+1. _**Nút nhấn Reset:**_ được nối với chân Reset (RST) của Arduino hoặc các bo mạch tương thích, sử dụng để khởi động lại (Reset) chương trình.
+2. _**Cổng cấp nguồn Domino:**_ được nối với chân VIN của Arduino hoặc các bo mạch tương thích, sử dụng để cấp nguồn cho mạch hoạt động hoặc lấy áp từ chân VIN của Arduino cấp cho các mạch khác, lưu ý không cấp ngược nguồn âm (-) và dương (+) và không cấp quá điện áp quy định dưới đây:
+    - Với các mạch Arduino sử dụng IC giảm áp LM1117 5VDC: điện áp VIN cấp từ 6~9VDC.
+    - Với mạch Vietduino sử dụng nguồn xung giảm áp: điện áp VIN từ 6~24VDC.
+5. _**Cổng giao tiếp I2C:**_ chuẩn cắm Conector XH2.54 4Pins (4 chân), được sử dụng để giao tiếp với cách bo mạch, module, cảm biến sử dụng giao tiếp I2C, thứ tự các chân tín hiệu: SCL-SDA-5V-GND, có tổng cộng 5 cổng I2C với các chân tín hiệu được nối song song (tương đương nhau).
+6. _**Cổng Digital I/O đôi:**_ chuẩn cắm Conector XH2.54 4Pins (4 chân), được sử dụng để giao tiếp với các bo mạch, module, cảm biến với 2 chân Digital I/O là D12 và D13 như cảm biến siêu âm hoặc có thể sử dụng như cổng Software Serial UART, thứ tự các chân tín hiệu: D12-D13-5V-GND.
+7. _**Cổng giao tiếp UART:**_ chuẩn cắm Conector XH2.54 4Pins (4 chân) được sử dụng để giao tiếp với cách bo mạch, module, cảm Biến sử dụng giao tiếp UART, thứ tự các chân tín hiệu: TX-RX-5V-GND.
+8. _**Cổng Digital I/O đơn:**_ chuẩn cắm Conector XH2.54 3Pins (3 chân), được sử dụng để giao tiếp với các bo mạch, module, cảm biến sử dụng tín hiệu Digital, thứ tự các chân tín hiệu: Digital I/O-5V-GND, có tổng cộng 3 cổng Digital I/O đơn được nối với các chân tín hiệu là: D9, D10, D11, thứ tự các chân tín hiệu: Digital Signal-5V-GND.
+9. _**Cổng cấp nguồn đầu ra bổ sung POWER+:**_ là cổng OUTPUT (đầu ra), được sử dụng để cấp nguồn cho các bo mạch, module, cảm biến cần sử dụng thêm các tín hiệu nguồn cấp bổ sung như: mạch relay, mạch điều khiển động cơ,..., thứ tự các chân tín hiệu: 3V3-5V-VIN-GND.
+10. _**Cầu phân áp VIN:**_ là cầu phân áp được nối với chân VIN, đầu ra của cầu phân áp sẽ trả ra giá trị là VOUT = VIN/5.7 được nối vào chân tín hiệu Analog A0 trên mạch, được sử dụng để đo giá trị của VIN trong các trường hợp: xác định mức pin, báo hiệu hết pin,...
+11. _**Cổng Analog Input:**_ chuẩn cắm Conector XH2.54 3Pins (3 chân), được sử dụng để giao tiếp với các bo mạch, module, cảm biến sử dụng tín hiệu Analog, thứ tự các chân tín hiệu: Analog Signal-5V-GND, có tổng cộng 3 cổng Analog Input được nối với các chân tín hiệu là: A1, A2, A3 (lưu ý đối với Arduino thì chân Analog còn có thể sử dụng như chân Digital nên cũng có thể sử dụng các cổng Analog Input này với chức năng như các cổng Digital I/O đơn).
+12. _**Đèn báo nguồn:**_ đèn sẽ sáng báo hiệu khi mạch MakerEdu Shield for Vietduino đã được cấp nguồn.
+
+### Cách kết nối
+
+#### Kết nối MakerEdu Shield với Vietduino Uno
+
+![](Vuno_shield6.jpg)
+
+**Lưu ý khi kết nối:**
+
+1. Cần cắm chặt và chính xác các chân kết nối của MakerEdu Shield với Vietduino.  
+2. Đèn nguồn trên MakerEdu Shield sẽ phát sáng khi các chân được kết nối chặt, khớp và đúng thứ tự.
+
+![](Vuno_shield7.jpg)
+
+## Các thiết bị sử dụng trong bài hướng dẫn
+
+### Arduino
 
 - [Mạch Vietduino Uno (Arduino Uno Compatible)](https://www.makerlab.vn/vuno)
 - [Mạch MakerEdu Shield for Vietduino]()
