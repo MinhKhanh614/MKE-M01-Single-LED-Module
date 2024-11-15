@@ -77,7 +77,8 @@ Mạch led đơn MKE-M01 10mm single LED module thuộc **hệ sinh thái phần
 
 - [Mạch Vietduino Uno (Arduino Uno Compatible)](https://www.makerlab.vn/vuno)
 - [Mạch MakerEdu Shield for Vietduino](/temp_link_Vuno_shield/)
-- [Mạch led đơn MKE-M01 10mm single LED module]()
+- [Mạch led đơn MKE-M01 10mm single LED module](https://www.makerlab.vn/mkem01)
+
 
 #### mBlock
 
@@ -87,8 +88,8 @@ Mạch led đơn MKE-M01 10mm single LED module thuộc **hệ sinh thái phần
 #### Micro:bit:
 
 - [Mạch Micro:bit V2](https://hshop.vn/products/kit-hoc-lap-trinh-stem-cho-tre-em-micro-bit-v2) hoặc các phiên bản tương thích.
-- [Mạch MakerEdu Shield for Micro:bit]()
-- [Mạch led đơn MKE-M01 10mm single LED module]()
+- [Mạch MakerEdu Shield for Micro:bit](https://www.makerlab.vn/microbitsd)
+- [Mạch led đơn MKE-M01 10mm single LED module](https://www.makerlab.vn/mkem01)
 
 ### Hướng dẫn sử dụng với Arduino (Code C)
   
